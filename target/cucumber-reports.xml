@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="11" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="26" time="387.346">
+    <testcase classname="Web application" name="Register User" time="15.642">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[text()='Enter Account Information']&quot;}&#10;  (Session info: chrome=131.0.6778.109)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, findElement {value=//b[text()='Enter Account Information'], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then Verify New User Signup! is visible.....................................passed
+Then enter name and email address...........................................passed
+Then click Signup button....................................................passed
+Then user verify that ENTER ACCOUNT INFORMATION is visible..................failed
+Then fill enter account information and Select all checkbox.................skipped
+Then fill address information...............................................skipped
+Then click create account button............................................skipped
+Then verify that ACCOUNT CREATED! is visible................................skipped
+Then click continue button..................................................skipped
+Then Verify that Logged in as username is visible...........................skipped
+Then Click Delete Account button............................................skipped
+Then Verify that ACCOUNT DELETED! is visible................................skipped
+And click Continue button afterdelete.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()='Enter Account Information']"}
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, findElement {value=//b[text()='Enter Account Information'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.pomPackage.SignupPage.verifyaccinformation(SignupPage.java:100)
+	at stepDefinitions.RegisterUser.user_verify_that_enter_account_information_is_visible(RegisterUser.java:68)
+	at ✽.user verify that ENTER ACCOUNT INFORMATION is visible(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Login User with correct email and password" time="15.462">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then verify Login to your account is visible................................passed
+Then Enter correct email address and password...............................passed
+Then Click login button.....................................................passed
+Then Verify that Logged in as username is visible...........................passed
+Then Click Delete Account button............................................passed
+Then Verify that ACCOUNT DELETED! is visible................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Login User with incorrect email and password" time="9.531">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then verify Login to your account is visible................................passed
+Then Enter incorrect email address and password.............................passed
+Then Click login button.....................................................passed
+Then Verify error Your email or password is incorrect! is visible...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Logout User" time="7.695">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=' Logged in as ']&quot;}&#10;  (Session info: chrome=131.0.6778.109)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, findElement {value=//a[text()=' Logged in as '], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then verify Login to your account is visible................................passed
+Then Enter correct email address and password...............................passed
+Then Click login button.....................................................passed
+Then Verify that Logged in as username is visible...........................failed
+Then Click Logout button....................................................skipped
+Then Verify that user is navigated to login page............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Logged in as ']"}
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, findElement {value=//a[text()=' Logged in as '], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.pomPackage.HomePage.verifylogin(HomePage.java:36)
+	at stepDefinitions.RegisterUser.verify_that_logged_in_as_username_is_visible(RegisterUser.java:104)
+	at ✽.Verify that Logged in as username is visible(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:59)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Register User with existing email" time="7.471">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then Verify New User Signup! is visible.....................................passed
+Then Enter name and already registered email address........................passed
+Then click Signup button....................................................passed
+Then Verify error Email Address already exist! is visible...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Contact Us Form" time="13.101">
+        <failure message="invalid argument: File not found : C:\Users\WGN\Documents\upload Test\muthuUpload.jpg&#10;  (Session info: chrome=131.0.6778.109)&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, sendKeysToElement {id=f.A4E5D84D5EE05A7571635244908AF64F.d.9A19344A895D92F4AEAD5E4CB0E60DDA.e.376, value=[Ljava.lang.CharSequence;@22bb5646}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (8427f99663355dcd68894596e5860d17)] -&gt; name: upload_file]&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.InvalidArgumentException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Contact Us button.............................................passed
+Then Verify GET IN TOUCH is visible.........................................passed
+Then Enter name, email, subject and message.................................passed
+Then Upload file............................................................failed
+Then Click Submit button....................................................skipped
+Then Click OK button........................................................skipped
+Then Verify success message Success! Your details have been submitted successfully. is visible.skipped
+Then Click Home button and verify that landed to home page successfully.....skipped
+
+StackTrace:
+org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\WGN\Documents\upload Test\muthuUpload.jpg
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, sendKeysToElement {id=f.A4E5D84D5EE05A7571635244908AF64F.d.9A19344A895D92F4AEAD5E4CB0E60DDA.e.376, value=[Ljava.lang.CharSequence;@22bb5646}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8427f99663355dcd68894596e5860d17)] -> name: upload_file]
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.pomPackage.contactUs.upload(contactUs.java:44)
+	at stepDefinitions.RegisterUser.upload_file(RegisterUser.java:226)
+	at ✽.Upload file(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:84)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Verify Test Cases Page" time="9.478">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[text()=' Cases']&quot;}&#10;  (Session info: chrome=131.0.6778.109)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, findElement {value=//b[text()=' Cases'], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Test Cases button.............................................passed
+Then Verify user is navigated to test cases page successfully...............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()=' Cases']"}
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, findElement {value=//b[text()=' Cases'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.pomPackage.PomClass.verifytest(PomClass.java:23)
+	at stepDefinitions.RegisterUser.verify_user_is_navigated_to_test_cases_page_successfully(RegisterUser.java:270)
+	at ✽.Verify user is navigated to test cases page successfully(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:98)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Verify All Products and product detail page" time="15.708">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Products button...............................................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then The products list is visible...........................................passed
+Then Click on View Product of first product and User is landed to product detail page.passed
+Then Verify that detail detail is visible: product name, category, price, availability, condition, brand.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Search Product" time="16.2">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Products button...............................................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then Enter product name in search input and click search button.............passed
+Then Verify SEARCHED PRODUCTS is visible....................................passed
+Then Verify all the products related to search are visible..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Verify Subscription in home page" time="7.396">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Scroll down to footer..................................................passed
+Then Verify text SUBSCRIPTION...............................................passed
+Then Enter email address in input and click arrow button....................passed
+Then Verify success message You have been successfully subscribed! is visible.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Verify Subscription in Cart page" time="8.359">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click Cart button......................................................passed
+Then Scroll down to footer..................................................passed
+Then Verify text SUBSCRIPTION...............................................passed
+Then Enter email address in input and click arrow button....................passed
+Then Verify success message You have been successfully subscribed! is visible.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Add Products in Cart" time="25.277">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Products button...............................................passed
+Then Hover over first product and click Add to cart.........................passed
+Then Click Continue Shopping button.........................................passed
+Then Hover over second product and click Add to cart........................passed
+Then Click View Cart button.................................................passed
+Then Verify both products are added to Cart.................................passed
+Then Verify their prices quantity and total price...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Verify Product quantity in Cart" time="9.789">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click View Product for any product on home page........................passed
+Then Verify product detail is opened........................................passed
+Then Increase quantity to four..............................................passed
+Then Click Add to cart button...............................................passed
+Then Click View Cart button.................................................passed
+Then Verify that product is displayed in cart page with exact quantity......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Place Order: Register while Checkout" time="46.793">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Add products to cart...................................................passed
+Then Click Cart button......................................................passed
+Then Verify that cart page is displayed.....................................passed
+Then Click Proceed To Checkout..............................................passed
+Then Click Register or Login button.........................................passed
+Then Fill all details in Signup and create account..........................passed
+Then Verify ACCOUNT CREATED! and click Continue button......................passed
+Then Verify Logged in as username at top....................................passed
+Then Click Cart button......................................................passed
+Then Click Proceed To Checkout button.......................................passed
+Then Verify Address Details and Review Your Order...........................passed
+Then Enter description in comment text area and click Place Order...........passed
+Then Enter payment details: Name on Card, Card Number, CVC, Expiration date.passed
+Then Click Pay and Confirm Order button.....................................passed
+Then Verify success message Your order has been placed successfully!........passed
+Then Click Delete Account button............................................passed
+Then Verify that ACCOUNT DELETED! is visible................................passed
+And click Continue button afterdelete.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Place Order: Register before Checkout" time="42.522">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then Fill all details in Signup and create account..........................passed
+Then Verify ACCOUNT CREATED! and click Continue button......................passed
+Then Verify Logged in as username at top....................................passed
+Then Add products to cart...................................................passed
+Then Click Cart button......................................................passed
+Then Verify that cart page is displayed.....................................passed
+Then Click Proceed To Checkout button.......................................passed
+Then Verify Address Details and Review Your Order...........................passed
+Then Enter description in comment text area and click Place Order...........passed
+Then Enter payment details: Name on Card, Card Number, CVC, Expiration date.passed
+Then Click Pay and Confirm Order button.....................................passed
+Then Verify success message Your order has been placed successfully!........passed
+Then Click Delete Account button............................................passed
+Then Verify that ACCOUNT DELETED! is visible................................passed
+And click Continue button afterdelete.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Place Order: Login before Checkout" time="9.448">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[1]/p&quot;}&#10;  (Session info: chrome=131.0.6778.109)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, findElement {value=/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[1]/p, using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then Fill email, password and click Login button............................passed
+Then Add products to cart...................................................failed
+Then Click Cart button......................................................skipped
+Then Verify that cart page is displayed.....................................skipped
+Then Click Proceed To Checkout button.......................................skipped
+Then Verify Address Details and Review Your Order...........................skipped
+Then Enter description in comment text area and click Place Order...........skipped
+Then Enter payment details: Name on Card, Card Number, CVC, Expiration date.skipped
+Then Click Pay and Confirm Order button.....................................skipped
+Then Verify success message Your order has been placed successfully!........skipped
+Then Click Delete Account button............................................skipped
+Then Verify that ACCOUNT DELETED! is visible................................skipped
+And click Continue button afterdelete.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[1]/p"}
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, findElement {value=/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[1]/p, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.basePackage.baseClass.hover(baseClass.java:82)
+	at stepDefinitions.RegisterUser.add_products_to_cart(RegisterUser.java:461)
+	at ✽.Add products to cart(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:234)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Remove Products From Cart" time="14.456">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Add products to cart...................................................passed
+Then Click Cart button......................................................passed
+Then Verify that cart page is displayed.....................................passed
+Then Click X button corresponding to particular product.....................passed
+Then Verify that product is removed from the cart...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="displayed" time="12.614">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),'Women - ') and (text()=' Products')]&quot;}&#10;  (Session info: chrome=131.0.6778.109)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, findElement {value=//h2[contains(text(),'Women - ') and (text()=' Products')], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter into the url...............................................passed
+And Verify that categories are visible on left side bar.....................passed
+Then Click on Women category................................................passed
+And Click on any category link under Women category, for example: Dress.....passed
+Then Verify that category page is displayed and confirm text WOMEN - TOPS PRODUCTS.failed
+Then On left side bar, click on any sub-category link of Men category.......skipped
+And Verify that user is navigated to that category page.....................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'Women - ') and (text()=' Products')]"}
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, findElement {value=//h2[contains(text(),'Women - ') and (text()=' Products')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.basePackage.baseClass.display(baseClass.java:91)
+	at stepDefinitions.RegisterUser.verify_that_category_page_is_displayed_and_confirm_text_women_tops_products(RegisterUser.java:610)
+	at ✽.Verify that category page is displayed and confirm text WOMEN - TOPS PRODUCTS(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:267)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="View &amp; Cart Brand Products" time="10.232">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[(text()='Brand - ') and (text()=' Products')]&quot;}&#10;  (Session info: chrome=131.0.6778.109)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8427f99663355dcd68894596e5860d17, findElement {value=//h2[(text()='Brand - ') and (text()=' Products')], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8427f99663355dcd68894596e5860d17" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user enter into the url...............................................passed
+Then Click on Products button...............................................passed
+Then Verify that Brands are visible on left side bar........................passed
+Then Click on any brand name................................................passed
+Then Verify that user is navigated to brand page and brand products are displayed.failed
+Then On left side bar, click on any other brand link........................skipped
+Then Verify that user is navigated to that brand page and can see products..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[(text()='Brand - ') and (text()=' Products')]"}
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8427f99663355dcd68894596e5860d17, findElement {value=//h2[(text()='Brand - ') and (text()=' Products')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8427f99663355dcd68894596e5860d17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.basePackage.baseClass.display(baseClass.java:91)
+	at stepDefinitions.RegisterUser.verify_that_user_is_navigated_to_brand_page_and_brand_products_are_displayed(RegisterUser.java:646)
+	at ✽.Verify that user is navigated to brand page and brand products are displayed(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:278)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Search Products and Verify Cart After Login" time="26.727">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then Click on Products button...............................................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then Enter product name in search input and click search button.............passed
+Then Verify SEARCHED PRODUCTS is visible....................................passed
+Then Verify all the products related to search are visible..................passed
+Then Add those products to cart.............................................passed
+Then Click Cart button......................................................passed
+And verify that products are visible in cart................................passed
+Then Click on Signup or Login button........................................passed
+And submit login details....................................................passed
+Then Again, go to Cart page.................................................passed
+Then Verify that those products are visible in cart after login as well.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Add review on product" time="9.225">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then Click on Products button...............................................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then Click on View Product button...........................................passed
+Then Verify Write Your Review is visible....................................passed
+Then Enter name, email, review and Click Submit button......................passed
+Then Verify success message Thank you for your review.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Add to cart from Recommended items" time="9.4">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then Scroll to bottom of page...............................................passed
+Then Verify RECOMMENDED ITEMS are visible...................................passed
+Then Click on Add To Cart on Recommended product............................passed
+Then Click View Cart button.................................................passed
+Then Verify that product is displayed in cart page..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Web application" name="Verify address details in checkout page" time="43.591">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {value=//ul[@id=&quot;address_delivery&quot;], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then Fill all details in Signup and create account..........................passed
+Then Verify ACCOUNT CREATED! and click Continue button......................passed
+Then Verify Logged in as username at top....................................passed
+Then Add products to cart...................................................passed
+Then Click Cart button......................................................passed
+Then Verify that cart page is displayed.....................................passed
+Then Click Proceed To Checkout..............................................passed
+Then Verify that the delivery address is same address filled at the time registration of account.failed
+Then Verify that the billing address is same address filled at the time registration of account.skipped
+Then Click Delete Account button............................................skipped
+Then Verify that ACCOUNT DELETED! is visible................................skipped
+And click Continue button afterdelete.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//ul[@id="address_delivery"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinitions.RegisterUser.verify_that_the_delivery_address_is_same_address_filled_at_the_time_registration_of_account(RegisterUser.java:782)
+	at ✽.Verify that the delivery address is same address filled at the time registration of account(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:333)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="" time="0.01">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, get {url=https://automationexercise.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given user enter into the url...............................................failed
+Then user verify that home page is visible successfully.....................skipped
+Then Add products to cart...................................................skipped
+Then Click Cart button......................................................skipped
+Then Verify that cart page is displayed.....................................skipped
+Then Click Proceed To Checkout..............................................skipped
+Then Click Register or Login button.........................................skipped
+Then Fill all details in Signup and create account..........................skipped
+Then Verify ACCOUNT CREATED! and click Continue button......................skipped
+Then Verify Logged in as username at top....................................skipped
+Then Click Cart button......................................................skipped
+Then Click Proceed To Checkout button.......................................skipped
+Then Verify Address Details and Review Your Order...........................skipped
+Then Enter description in comment text area and click Place Order...........skipped
+Then Enter payment details: Name on Card, Card Number, CVC, Expiration date.skipped
+Then Click Pay and Confirm Order button.....................................skipped
+Then Verify success message Your order has been placed successfully!........skipped
+Then Click Download Invoice button and verify invoice is downloaded successfully and Click Continue button.skipped
+Then Click Delete Account button............................................skipped
+Then Verify that ACCOUNT DELETED! is visible................................skipped
+And click Continue button afterdelete.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://automationexercise.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.basePackage.baseClass.geturl(baseClass.java:39)
+	at stepDefinitions.RegisterUser.user_enter_into_the_url(RegisterUser.java:32)
+	at ✽.user enter into the url(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:343)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="Verify Scroll Up using Arrow button and Scroll Down functionality" time="0.004">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, get {url=https://automationexercise.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given user enter into the url...............................................failed
+Then user verify that home page is visible successfully.....................skipped
+Then Scroll down to footer..................................................skipped
+Then Verify text SUBSCRIPTION...............................................skipped
+Then Click on arrow at bottom right side to move upward.....................skipped
+And Verify that page is scrolled up and Full-Fledged practice website for Automation Engineers text is visible on screen.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://automationexercise.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.basePackage.baseClass.geturl(baseClass.java:39)
+	at stepDefinitions.RegisterUser.user_enter_into_the_url(RegisterUser.java:32)
+	at ✽.user enter into the url(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:369)
+]]></failure>
+    </testcase>
+    <testcase classname="Web application" name="" time="0.002">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, get {url=https://automationexercise.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given user enter into the url...............................................failed
+Then user verify that home page is visible successfully.....................skipped
+Then Scroll down to footer..................................................skipped
+Then Verify text SUBSCRIPTION...............................................skipped
+Then Scroll up page to top..................................................skipped
+And Verify that page is scrolled up and Full-Fledged practice website for Automation Engineers text is visible on screen.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://automationexercise.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62299/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.basePackage.baseClass.geturl(baseClass.java:39)
+	at stepDefinitions.RegisterUser.user_enter_into_the_url(RegisterUser.java:32)
+	at ✽.user enter into the url(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:380)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.63">
+    <testcase classname="Web application" name="Contact Us Form" time="15.018">
+        <failure message="invalid argument: File not found : C:\Users\WGN\Documents\upload Test\muthuUpload.jpg&#10;  (Session info: chrome=131.0.6778.109)&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cdc8550103a49803cdbbb29222f7f98b, sendKeysToElement {value=[Ljava.lang.CharSequence;@19f9d595, id=f.E326A84F478D97A5C7DE0F72D1B06603.d.77855822D99A01FFA98795AF61FDF4D2.e.39}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61975/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (cdc8550103a49803cdbbb29222f7f98b)] -&gt; name: upload_file]&#10;Session ID: cdc8550103a49803cdbbb29222f7f98b" type="org.openqa.selenium.InvalidArgumentException"><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Contact Us button.............................................passed
+Then Verify GET IN TOUCH is visible.........................................passed
+Then Enter name, email, subject and message.................................passed
+Then Upload file............................................................failed
+Then Click Submit button....................................................skipped
+Then Click OK button........................................................skipped
+Then Verify success message Success! Your details have been submitted successfully. is visible.skipped
+Then Click Home button and verify that landed to home page successfully.....skipped
+
+StackTrace:
+org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\WGN\Documents\upload Test\muthuUpload.jpg
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdc8550103a49803cdbbb29222f7f98b, sendKeysToElement {value=[Ljava.lang.CharSequence;@19f9d595, id=f.E326A84F478D97A5C7DE0F72D1B06603.d.77855822D99A01FFA98795AF61FDF4D2.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\WGN\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61975/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cdc8550103a49803cdbbb29222f7f98b)] -> name: upload_file]
+Session ID: cdc8550103a49803cdbbb29222f7f98b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.pomPackage.contactUs.upload(contactUs.java:44)
+	at stepDefinitions.RegisterUser.upload_file(RegisterUser.java:226)
+	at ✽.Upload file(file:///C:/Users/WGN/December%20eclipse-workspace/AutomationExerciseSucessRun/src/test/java/features/AutmateTest.feature:84)
+]]></failure>
+    </testcase>
+</testsuite>
+
+
+
+
+
+case 7  
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.063">
+    <testcase classname="Web application" name="Verify Test Cases Page" time="14.645">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Test Cases button.............................................passed
+Then Verify user is navigated to test cases page successfully...............passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+case8
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.411">
+    <testcase classname="Web application" name="Verify All Products and product detail page" time="13.977">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Products button...............................................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then The products list is visible...........................................passed
+Then Click on View Product of first product and User is landed to product detail page.passed
+Then Verify that detail detail is visible: product name, category, price, availability, condition, brand.passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+
+case 9
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.232">
+    <testcase classname="Web application" name="Search Product" time="16.846">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Products button...............................................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then Enter product name in search input and click search button.............passed
+Then Verify SEARCHED PRODUCTS is visible....................................passed
+Then Verify all the products related to search are visible..................passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+
+case 10
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.419">
+    <testcase classname="Web application" name="Verify Subscription in home page" time="19.63">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Scroll down to footer..................................................passed
+Then Verify text SUBSCRIPTION...............................................passed
+Then Enter email address in input and click arrow button....................passed
+Then Verify success message You have been successfully subscribed! is visible.passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+
+case 11
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.911">
+    <testcase classname="Web application" name="Verify Subscription in Cart page" time="11.436">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click Cart button......................................................passed
+Then Scroll down to footer..................................................passed
+Then Verify text SUBSCRIPTION...............................................passed
+Then Enter email address in input and click arrow button....................passed
+Then Verify success message You have been successfully subscribed! is visible.passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+case 12
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.351">
+    <testcase classname="Web application" name="Add Products in Cart" time="33.864">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Products button...............................................passed
+Then Hover over first product and click Add to cart.........................passed
+Then Click Continue Shopping button.........................................passed
+Then Hover over second product and click Add to cart........................passed
+Then Click View Cart button.................................................passed
+Then Verify both products are added to Cart.................................passed
+Then Verify their prices quantity and total price...........................passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+
+case 13
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.943">
+    <testcase classname="Web application" name="Verify Product quantity in Cart" time="14.606">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click View Product for any product on home page........................passed
+Then Verify product detail is opened........................................passed
+Then Increase quantity to four..............................................passed
+Then Click Add to cart button...............................................passed
+Then Click View Cart button.................................................passed
+Then Verify that product is displayed in cart page with exact quantity......passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+
+case 14
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="51.006">
+    <testcase classname="Web application" name="Place Order: Register while Checkout" time="50.666">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Add products to cart...................................................passed
+Then Click Cart button......................................................passed
+Then Verify that cart page is displayed.....................................passed
+Then Click Proceed To Checkout..............................................passed
+Then Click Register or Login button.........................................passed
+Then Fill all details in Signup and create account..........................passed
+Then Verify ACCOUNT CREATED! and click Continue button......................passed
+Then Verify Logged in as username at top....................................passed
+Then Click Cart button......................................................passed
+Then Click Proceed To Checkout button.......................................passed
+Then Verify Address Details and Review Your Order...........................passed
+Then Enter description in comment text area and click Place Order...........passed
+Then Enter payment details: Name on Card, Card Number, CVC, Expiration date.passed
+Then Click Pay and Confirm Order button.....................................passed
+Then Verify success message Your order has been placed successfully!........passed
+Then Click Delete Account button............................................passed
+Then Verify that ACCOUNT DELETED! is visible................................passed
+And click Continue button afterdelete.......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+case 15
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="51.006">
+    <testcase classname="Web application" name="Place Order: Register while Checkout" time="50.666">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Add products to cart...................................................passed
+Then Click Cart button......................................................passed
+Then Verify that cart page is displayed.....................................passed
+Then Click Proceed To Checkout..............................................passed
+Then Click Register or Login button.........................................passed
+Then Fill all details in Signup and create account..........................passed
+Then Verify ACCOUNT CREATED! and click Continue button......................passed
+Then Verify Logged in as username at top....................................passed
+Then Click Cart button......................................................passed
+Then Click Proceed To Checkout button.......................................passed
+Then Verify Address Details and Review Your Order...........................passed
+Then Enter description in comment text area and click Place Order...........passed
+Then Enter payment details: Name on Card, Card Number, CVC, Expiration date.passed
+Then Click Pay and Confirm Order button.....................................passed
+Then Verify success message Your order has been placed successfully!........passed
+Then Click Delete Account button............................................passed
+Then Verify that ACCOUNT DELETED! is visible................................passed
+And click Continue button afterdelete.......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
+
+
+case 16
+

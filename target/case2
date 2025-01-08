@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="31.528">
+    <testcase classname="Web application" name="Login User with correct email and password" time="30.122">
+        <system-out><![CDATA[Given user enter into the url...............................................passed
+Then user verify that home page is visible successfully.....................passed
+Then Click on Signup or Login button........................................passed
+Then verify Login to your account is visible................................passed
+Then Enter correct email address and password...............................passed
+Then Click login button.....................................................passed
+Then Verify that Logged in as username is visible...........................passed
+Then Click Delete Account button............................................passed
+Then Verify that ACCOUNT DELETED! is visible................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
